@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact Us</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS_Files/ourCSS.css">
+  <script>
+    function submitted() {
+      var captchaNumber1, captchaNumber2, passed = 0;
+
+      captchaNumber1 = Math.floor(Math.random() * 10);
+      captchaNumber2 = Math.floor(Math.random() * 10);
+
+      while (passed == 0) {
+
+        var result = parseInt(window.prompt("Please enter the result of adding " + captchaNumber1 + " and " + captchaNumber2));
+
+        if ((captchaNumber1 + captchaNumber2) == result) {
+          alert("Nice! You passed the captcha, your form will now be submitted!");
+          passed++;
+        } else if (result == -1) {
+          alert("You did not pass the captcha test and will now exit");
+          passed++;
+        } else {
+          alert("Oh no! You did not pass the captcha, please try again or type -1 to exit");
+        }
+      }
+    }
+
+    function resetFunction() {
+      var userReset = "Reset, thank you!";
+      alert(userReset);
+    }
+  </script>
+</head>
+
+<body>
+  <header class="textModifications">
+    <a href="Homepage.html"><img src="../Media/Logo.png" class="logo" alt="OneShot Logo"></a>
+    <h1 class="headerStyling topPadding">OneShot</h1>
+    <br><br>
+    <h2>League of Legends Role Analytics Website</h2>
+    <br><br>
+    <h3 class="redBorder currentStyling topPadding">Contact Us</h3>
+    <br>
+  </header>
+  <!-------------------------------------------------------------------------------------------->
+  <nav>
+    <table class="center">
+      <tr>
+        <td><a href="TopLane.html"><img class="generalImage redBorder toplane"></a></td>
+        <td><a href="MiddleLane.html"><img class="generalImage redBorder leftImageMargin midlane"></a></td>
+        <td><a href="Jungle.html"><img class="generalImage redBorder leftImageMargin jungle"></a></td>
+      </tr>
+      <tr>
+        <td><a href="BottomLane.html"><img class="generalImage redBorder bottom"></a></td>
+        <td><a href="Support.html"><img class="generalImage redBorder leftImageMargin support"></a></td>
+        <td><a href="ContactUs.html"><img class="whiteBorder generalImage redBorder leftImageMargin contactusSelected"></a></td>
+      </tr>
+    </table>
+  </nav>
+  <br><br><br>
+  <!-------------------------------------------------------------------------------------------->
+  <main class="blackExtendContactUs textModifications">
+    <h2 class="topSpacing headingFontSize">Welcome
+      <!-------------------------------------------------------------------------------------------->
+      <script>
+        var firstName = window.prompt("Please enter your first name");
+        document.write(firstName + "!");
+      </script>
+      <!-------------------------------------------------------------------------------------------->
+    </h2>
+    <br><br>
+    <form method="post" action="#">
+      <label>Please Enter Your Full Name</label>
+      <input type="text" name="fullName" value="Enter your full name" size="30" maxlength="30">
+      <label>Please Enter Your Email Address</label>
+      <input type="email" name="emailAddress" value="Enter your email address" size="40" maxlength="39">
+      <label>Your Message</label>
+      <textarea name="textArea" rows="15" cols="50"></textarea>
+      <label><span class='redText'>Optional:</span> Favorite Roles in League of Legends</label>
+      <!-------------------------------------------------------------------------------------------->
+      <table class="center">
+        <tr>
+          <td>
+            <label>Top Lane</label>
+            <input type="checkbox" name="roles">
+          </td>
+
+          <td>
+            <label>Middle Lane</label>
+            <input type="checkbox" name="roles">
+          </td>
+
+          <td>
+            <label>Jungle</label>
+            <input type="checkbox" name="roles">
+          </td>
+
+          <td>
+            <label>Bottom Lane</label>
+            <input type="checkbox" name="roles">
+          </td>
+
+          <td>
+            <label>Support</label>
+            <input type="checkbox" name="roles" checked>
+          </td>
+      </table>
+      <!-------------------------------------------------------------------------------------------->
+      <div>
+        <table class="center">
+          <tr>
+            <td>
+              <input type="submit" class="textModifications buttonStyling" onclick="submitted();">
+            </td>
+            <td>
+              <input type="reset" class="textModifications buttonStyling" onclick="resetFunction();">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </form>
+    <!-------------------------------------------------------------------------------------------->
+    <script>
+      var wins, losses, winrate;
+
+      wins = parseInt(window.prompt("Calculate your winrate by entering the number of wins you have (You can skip this by pressing cancel)"));
+      losses = parseInt(window.prompt("Calculate your winrate by entering the number of losses you have (You can skip this by pressing cancel)"));
+
+      winrate = wins / (wins + losses) * 100;
+
+      document.writeln("<h2 class='topSpacingJavascript headingFontSize'> Your winrate is: </h2>" + "<h2 class='headingFontSize redText'>" + winrate + "</h2>");
+
+      if (winrate > 100) {
+        document.writeln("<br><h2 class='headingFontSize regularText'>You're hacking</h2>");
+      } else if (winrate >= 70) {
+        document.writeln("<br><h2 class='headingFontSize'>You're an <span class='redText headingFontSize'>A</span> ranked player!<br> Keep it up!</h2>");
+      } else if (winrate >= 50) {
+        document.writeln("<br><h2 class='headingFontSize'>Doing good!<br> You're a  <span class='redText headingFontSize'>B</span> ranked player!</h2>");
+      } else if (winrate >= 40) {
+        document.writeln("<br><h2 class='headingFontSize'>Not bad! You're middle of<br>the pack at the <span class='redText headingFontSize'>C</span> rank!</h2>");
+      } else if (winrate >= 20) {
+        document.writeln("<br><h2 class='headingFontSize'>Lots of room for improvement!<br> You can do it <span class='redText headingFontSize'>D</span> ranked player!</h2>");
+      } else if (winrate >= 0) {
+        document.writeln("<br><h2 class='headingFontSize'>Don't look so sad :(<br> <span class='redText headingFontSize'>F</span> is for Fantastic!<br> Not Failure! <br></h2><h3>(Quit the game please)</h3>")
+      } else {
+        document.writeln("<br><h2 class='headingFontSize'>No Winrate</h2>");
+      }
+      //--------------------------------------------------------------------------------------------
+      var winstreak, counter = 0;
+
+      winstreak = window.prompt("Calculate your winstreak! Type W for a win or type L to exit");
+
+      while (winstreak != "L") {
+
+        if (winstreak == "W") {
+          counter++;
+        }
+
+        winstreak = window.prompt("Nice! Did you win again? If yes, type W for a win or type L to exit");
+      }
+
+      document.write("<br><h2 class='headingFontSize'>Your winstreak is: </h2>" + "<h2 class='headingFontSize redText'>" + counter + "</h2>");
+    </script>
+  </main>
+  <!-------------------------------------------------------------------------------------------->
+  <footer>
+    <a href="AboutDevelopers.html"><img class="leftMargin5Percent aboutDevelopersImageDimensions aboutDevelopersImage redBorder"></a>
+    <table>
+      <tr>
+        <td><a href="https://www.facebook.com/leagueoflegends/"><img class="icons redBorder facebook"></a></td>
+        <td><a href="https://twitter.com/LeagueOfLegends?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor.html"><img class="icons redBorder twitter"></a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.instagram.com/leagueoflegends/?hl=en"><img class="icons redBorder instagram"></a></td>
+        <td><a href="https://www.youtube.com/channel/UC2t5bjwHdUX4vM2g8TRDq5g"><img class="icons redBorder youtube"></a></td>
+      </tr>
+    </table>
+  </footer>
+</body>
+
+</html>

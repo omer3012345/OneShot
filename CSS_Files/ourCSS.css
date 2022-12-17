@@ -1,0 +1,463 @@
+/*------------------------ HTML Elements Styling ------------------------*/
+/* We use the asterisk (Universal selector) to apply this style to every element in the document
+   We have done so in order to start with a blank canvas for our project. */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*------------------------ Headers Styling ------------------------*/
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/*------------------------ Paragraphs Styling ------------------------*/
+p {
+  font-size: 26px;
+  width: 50%;
+  height: 582px;
+  background-color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 25px 25px 25px;
+}
+
+/*------------------------ Lists Styling ------------------------*/
+ul {
+  font-size: 26px;
+  width: 20px;
+  margin-top: -475px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 25px 25px 25px;
+}
+
+ul ol li {
+  font-size: 20px;
+  margin-left: 25px;
+  padding: 10px 25px 10px 25px;
+}
+
+/*------------------------ Body Styling ------------------------*/
+body {
+  background-color: #02066F;
+}
+
+body main {
+  margin-top: 100px;
+  background-color: #000000;
+  height: 700px;
+}
+
+body footer {
+  margin-top: 900px;
+  background-color: #000000;
+  height: 300px;
+}
+
+/*------------------------ Video Styling ------------------------*/
+video {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #FF073A;
+}
+
+/*------------------------ Form Elements Styling ------------------------*/
+label {
+  display: block;
+  padding: 20px 15px 20px 15px;
+  font-size: 20px;
+}
+
+input, textarea {
+  padding: 7px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.buttonStyling {
+  margin: 35px;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  background-color: #000000;
+  padding: 6.4px 16px;
+  text-decoration: none;
+}
+
+.buttonStyling:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+/*------------------------ Heading Elements Styling ------------------------*/
+.headerStyling {
+  width: 50%;
+  height: 150px;
+  background-color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.currentStyling {
+  width: 20%;
+  height: 45px;
+  background-color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topSpacing {
+  margin-top: 150px;
+  padding-top: 100px;
+}
+
+.topSpacingJavascript {
+  margin-top: 150px;
+  padding-top: 50px;
+}
+
+/* Picture taken from https://lh3.googleusercontent.com/proxy/iddJ3d9ZCcStbUKJ1Qq7DP-Sd437QserfQAdJC6XqREEZOWjUMzY77MrRF6W6xavSIzk-RVwDhE4U_WVGGTdjsMv6YjpA1bkd3GB6O12qC_nnFJVNqitvY3E1UoZP6s */
+.logo {
+  width: 248px;
+  height: 313px;
+  margin-top: 25px;
+}
+
+.logo:hover {
+  background-image: url("../Media/LogoHover.png");
+  background-position: center;
+  background-size: 260px 328px;
+}
+
+/*------------------------ Text Styling ------------------------*/
+.textModifications {
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.redText {
+  color: #FF073A;
+}
+
+.regularText {
+  text-transform: none;
+}
+
+.headingFontSize {
+  font-size: 70px;
+}
+
+/*------------------------ Margins and Alignment ------------------------*/
+.leftSpacing {
+  text-align: left;
+  margin-left: 50px;
+}
+
+.rightSpacing {
+  text-align: right;
+  margin-right: 50px;
+}
+
+.leftTextRightAlign {
+  text-align: left;
+  margin-right: 50px;
+}
+
+/*------------------------ Padding ------------------------*/
+.padding25px {
+  padding: 25px;
+}
+
+.topPadding {
+  padding-top: 10px;
+}
+
+/*------------------------ Solid Color Blocks ------------------------*/
+.blackExtend {
+  height: 1700px;
+}
+
+.blackExtendJungle {
+  height: 1850px;
+}
+
+.blackExtendContactUs {
+  height: 1200px;
+}
+
+.blackExtendAboutDevelopers {
+  height: 1000px;
+}
+
+.whiteBackground {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/*------------------------ Borders ------------------------*/
+img.whiteBorder {
+  border: 3px solid #FFFFFF;
+}
+
+.redBorder {
+  border: 3px solid #FF073A;
+}
+
+/*------------------------ Table Elements Styling ------------------------*/
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tableStyling {
+  margin-top: 50px;
+  font-size: 20px;
+  border-spacing: 25px;
+  border-collapse: separate;
+  border-bottom: 5px solid #FF073A;
+}
+
+.tableStyling thead tr th {
+  font-size: 25px;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.tableIconStyling {
+  width: 100px;
+  height: 100px;
+}
+
+.link {
+  color: #000000;
+  background-color: #FFFFFF;
+  padding: 0.4em 1em;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: #FF073A;
+}
+
+.gifStyling {
+  width: 480px;
+  height: 480px;
+  border: 1px solid #FF073A;
+  background-size: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* gifs taken from https://www.pinterest.com/Gifs_of_Legends/league-of-legends-gifs/ */
+.sion {
+  background-image: url("../Media/SionTop.gif");
+}
+
+.yasuo {
+  background-image: url("../Media/YasuoMiddle.gif");
+}
+
+.fiddlesticks {
+  background-image: url("../Media/FiddlesticksJungle.gif");
+}
+
+.jhin {
+  background-image: url("../Media/JhinBottom.gif");
+}
+
+.braum {
+  background-image: url("../Media/BraumSupport.gif");
+}
+
+/*------------------------ Main Image Styling ------------------------*/
+.mainImageStyling {
+  width: 540px;
+  height: 630px;
+  border: 1px solid #FF073A;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.leftMargin5Percent {
+  margin-left: 5%;
+}
+
+.leftMargin61Percent {
+  margin-left: 61%;
+}
+
+.zed {
+  background-image: url("../Media/ZedGif.gif");
+  /* gif taken from https://64.media.tumblr.com/57cfe1988e717b3a6f58f2c46fab5e75/tumblr_ocqq7vRLYh1tvo2c3o1_540.gifv */
+}
+
+.shen {
+  background-image: url("../Media/ShenGif.gif");
+  /* gif taken from https://64.media.tumblr.com/f0fbfe5b9a23f2b13fda38451b1a6bac/tumblr_ndk20zVAat1tvo2c3o1_r1_500.gifv */
+}
+
+.victor {
+  background-image: url("../Media/VictorGif.gif");
+  /* gif taken from https://64.media.tumblr.com/ed04c238445efa577a337c493f028bc6/tumblr_nk6y6sLySw1tvo2c3o1_500.gifv */
+}
+
+.masterYi {
+  background-image: url("../Media/MasterYiGif.gif");
+  /* gif taken from https://64.media.tumblr.com/aff9aea942ae899bd433d6fccce377f7/tumblr_oomqsoA6mg1tvo2c3o1_540.gifv */
+}
+
+.varus {
+  background-image: url("../Media/VarusGif.gif");
+  /* gif taken from https://aurelinsol.tumblr.com/image/155363170615 */
+}
+
+.bard {
+  background-image: url("../Media/BardGif.gif");
+  /* gif taken from https://64.media.tumblr.com/d95a03b1490a1572c5d8c62111938a37/tumblr_nkar054jVL1tvo2c3o1_500.gifv */
+}
+
+.mohamedOmer {
+  background-image: url("../Media/MohamedOmer.jpeg");
+}
+
+.abdulrahman {
+  background-image: url("../Media/Abdulrahman.jpeg");
+}
+
+/*------------------------ Navigation Elements Styling ------------------------*/
+.generalImage {
+  width: 250px;
+  height: 250px;
+  margin-top: 50px;
+}
+
+.leftImageMargin {
+  margin-left: 10px;
+}
+
+.toplane, .toplaneSelected:hover {
+  background-image: url("../Media/FioraTop.png");
+  /* Picture taken from https://lolwp.com/wp-content/uploads/2012/02/Project-Fiora-1920x1200.jpg */
+}
+
+.toplane:hover, .toplaneSelected {
+  background-image: url("../Media/Fiora.png");
+}
+
+.midlane, .midlaneSelected:hover {
+  background-image: url("../Media/YasuoMid.png");
+  /* Picture taken from https://images7.alphacoders.com/536/thumb-1920-536426.png */
+}
+
+.midlane:hover, .midlaneSelected {
+  background-image: url("../Media/Yasuo.png");
+}
+
+.jungle, .jungleSelected:hover {
+  background-image: url("../Media/LeeSinJungle.png");
+  /* Picture taken from https://wallpaperaccess.com/full/1906838.jpg */
+}
+
+.jungle:hover, .jungleSelected {
+  background-image: url("../Media/LeeSin.png");
+}
+
+.bottom, .bottomSelected:hover {
+  background-image: url("../Media/KalistaBottom.png");
+  /* Picture taken from https://wallpapercave.com/wp/wp2170705.jpg */
+}
+
+.bottom:hover, .bottomSelected {
+  background-image: url("../Media/Kalista.png");
+}
+
+.support, .supportSelected:hover {
+  background-image: url("../Media/SennaSupport.png");
+  /* Picture taken from https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f3a43a4e-1d97-4490-8a0c-a61cbf8954e8/ddk36dk-3b108c8f-41bd-4864-8388-0fbab9d327ec.jpg/v1/fill/w_1280,h_1280,q_75,strp/senna__from_league_of_legends_by_lltonymaverickll_ddk36dk-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMjgwIiwicGF0aCI6IlwvZlwvZjNhNDNhNGUtMWQ5Ny00NDkwLThhMGMtYTYxY2JmODk1NGU4XC9kZGszNmRrLTNiMTA4YzhmLTQxYmQtNDg2NC04Mzg4LTBmYmFiOWQzMjdlYy5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.TkOEKTGu8o6evVco2ka8e4O_viRzi_O_XIvWgHTXOH4
+ */
+}
+
+.support:hover, .supportSelected {
+  background-image: url("../Media/Senna.png");
+}
+
+.contactus, .contactusSelected:hover {
+  background-image: url("../Media/EkkoContactUs.png");
+  /* Picture taken from https://1.bp.blogspot.com/-1IS5hAy2P9c/XqhmxcLlRQI/AAAAAAABjO0/omiBbubTnQg9hS0J6_m8WE7kaqYF5DgzACLcBGAsYHQ/s1600/006f8wK2gy1ge9kv4fcenj31hc0u0x6p.jpg */
+}
+
+.contactus:hover, .contactusSelected {
+  background-image: url("../Media/Ekko.png");
+}
+
+/*------------------------ Footer Elements Styling ------------------------*/
+.aboutDevelopersImageDimensions {
+  width: 640px;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.aboutDevelopersImage, .aboutDevelopersImageSelected:hover {
+  background-image: url("../Media/AboutDevelopers.png");
+  /* Picture taken from https://i.imgur.com/ZnwwBmT.png */
+}
+
+.aboutDevelopersImage:hover, .aboutDevelopersImageSelected {
+  background-image: url("../Media/AboutDevelopersHover.png");
+}
+
+.icons {
+  width: 96px;
+  height: 96px;
+  position: absolute;
+  margin-top: -161px;
+  /* Icons taken from https://iconscout.com/icon-pack/social-media-square-black# */
+}
+
+.facebook {
+  background-image: url("../Media/Facebook.png");
+  margin-left: 57%;
+}
+
+.facebook:hover {
+  background-image: url("../Media/FacebookHover.png");
+}
+
+.twitter {
+  background-image: url("../Media/Twitter.png");
+  margin-left: 67%;
+}
+
+.twitter:hover {
+  background-image: url("../Media/TwitterHover.png");
+}
+
+.instagram {
+  background-image: url("../Media/Instagram.png");
+  margin-left: 77%;
+}
+
+.instagram:hover {
+  background-image: url("../Media/InstagramHover.png");
+}
+
+.youtube {
+  background-image: url("../Media/Youtube.png");
+  margin-left: 87%;
+}
+
+.youtube:hover {
+  background-image: url("../Media/YoutubeHover.png");
+}
